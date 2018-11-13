@@ -17,4 +17,9 @@ EASY, MEDIUM, HARD;
 		return iDifficulty;
 	}
 	
+	public static eGameDifficulty valueOf(java.lang.String name)
+	{
+		for(eGameDifficulty d : eGameDifficulty.values())
+			lookup.put(d.getiDifficulty(), d);
+	}
 }
